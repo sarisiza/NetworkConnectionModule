@@ -1,12 +1,13 @@
 package com.upakon.networkhelpers.interceptors
 
+import com.upakon.networkhelpers.network.NetworkVerification
 import okhttp3.CacheControl
 import okhttp3.Interceptor
 import okhttp3.Response
 import java.util.concurrent.TimeUnit
 
 /**
- * Cache Interceptor
+ * [CacheInterceptor]
  * @author Sara Iza
  * Creates a Cache Control Interceptor for API Connections
  * Implements: interceptor
@@ -14,17 +15,16 @@ import java.util.concurrent.TimeUnit
  * @param timeUnit
  * @constructor Creates a new Cache Interceptor
  */
-class CacheInterceptor(
+internal class CacheInterceptor(
     private val maxAge: Int,
-    private val timeUnit: TimeUnit
+    private val timeUnit: TimeUnit,
 ) : Interceptor {
 
     /**
      * [intercept]
      * Adds a Cache Control header to the Response
-     * Cache control
      * @param chain
-     * @return Response
+     * @return Header Response
      */
     override fun intercept(chain: Interceptor.Chain): Response {
         val cacheControl =

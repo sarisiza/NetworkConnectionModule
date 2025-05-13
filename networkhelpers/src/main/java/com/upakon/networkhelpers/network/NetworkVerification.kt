@@ -4,7 +4,7 @@ import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
 
 /**
- * NetworkVerification
+ * [NetworkVerification]
  * @author Sara Iza
  * Helper class that verifies if Internet is connected
  * @property connectivityManager Connectivity Manager from Application's Context
