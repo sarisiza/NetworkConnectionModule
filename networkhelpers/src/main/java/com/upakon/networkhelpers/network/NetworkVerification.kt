@@ -5,6 +5,7 @@ import android.net.NetworkCapabilities
 
 /**
  * NetworkVerification
+ * @author Sara Iza
  * Helper class that verifies if Internet is connected
  * @property connectivityManager Connectivity Manager from Application's Context
  * @constructor Creates an instance of the NetworkVerification class
@@ -15,9 +16,9 @@ class NetworkVerification(
 ) {
 
     /**
-     * verifyConnectivity
+     * [verifyConnectivity]
      * Method to verify if Internet is connected
-     * @return true if device is connected to internet
+     * @return true if device is connected to internet, false otherwise
      */
 
     fun verifyConnectivity(): Boolean =
