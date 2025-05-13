@@ -22,3 +22,4 @@ dependencyResolutionManagement {
 rootProject.name = "NetworkConnection"
 include(":app")
 include(":restconnection")
+include(":networkhelpers")
