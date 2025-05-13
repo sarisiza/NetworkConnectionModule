@@ -8,9 +8,10 @@ import java.util.concurrent.TimeUnit
 
 /**
  * [CacheInterceptor]
- * @author Sara Iza
  * Creates a Cache Control Interceptor for API Connections
+ *
  * Implements: interceptor
+ * @author Sara Iza
  * @param maxAge The amount of time it takes for the copy of a resource to expire
  * @param timeUnit
  * @constructor Creates a new Cache Interceptor

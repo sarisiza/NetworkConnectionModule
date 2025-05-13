@@ -5,8 +5,8 @@ import android.net.NetworkCapabilities
 
 /**
  * [NetworkVerification]
- * @author Sara Iza
  * Helper class that verifies if Internet is connected
+ * @author Sara Iza
  * @property connectivityManager Connectivity Manager from Application's Context
  * @constructor Creates an instance of the NetworkVerification class
  */

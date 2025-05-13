@@ -7,11 +7,12 @@ import okhttp3.Response
 
 /**
  * [ForceCacheInterceptor]
- * @author Sara Iza
  * Forces caching whenever internet is not available
+ *
+ * Implements: Interceptor
+ * @author Sara Iza
  * @constructor Creates a [ForceCacheInterceptor]
  * @param networkVerification Helper to verify if internet is present
- * Implements: Interceptor
  */
 
 internal class ForceCacheInterceptor(
